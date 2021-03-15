@@ -114,7 +114,8 @@ body{
     float: right;
 }
 
-.container{
+.container,
+.products-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -151,6 +152,86 @@ body{
     opacity: 1;
     padding: 10px;
     text-decoration: none;
+}
+
+/*---------CARRITO----------------*/
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon{
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+    color: white;
+}
+
+.product-title{
+    width: 45%;
+}
+
+.price{
+    width: 15%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.quantity{
+    width:30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.total{
+    width: 10%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+}
+
+.basketTotalTitle{
+    width: 30%;
+}
+
+.basketTotal{
+    width: 10%;
 }
 
 @media(max-width:1080px){
